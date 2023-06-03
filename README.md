@@ -1,6 +1,10 @@
-## 📌 프로젝트 실행방법
+## [원티드 프리온보딩 인턴십]
 
-배포링크 : https://mya413.github.io/wanted-pre-onboarding-frontend
+### 👩🏻‍💻 이승미
+
+### 📌 프로젝트 실행방법
+
+배포링크 : https://wanted-pre-onboarding-frontend-two-amber.vercel.app
 
 - git clone 후, npm install & npm start 명령어로 실행
 - local storage에 유효한 엑세스 토큰이 없을 경우 /signin 경로로 리다이렉트
