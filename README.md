@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+## 📌 프로젝트 실행방법
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+배포링크 : https://mya413.github.io/wanted-pre-onboarding-frontend
 
-## Available Scripts
+- git clone 후, npm install & npm start 명령어로 실행
+- local storage에 유효한 엑세스 토큰이 없을 경우 /signin 경로로 리다이렉트
+- local storage에 유효한 엑세스 토큰이 있을 경우 /todo 경로로 리다이렉트
 
-In the project directory, you can run:
+### 1. 메인 페이지
 
-### `npm start`
+- 간단한 페이지 설명과 함께 로그인, 회원가입 버튼이 있음
+- 각 버튼 클릭 시 로그인 페이지(/signin), 회원가입 페이지(/signup)으로 이동
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. 회원가입 페이지
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 아이디와 비밀번호를 입력하여 회원가입이 가능
+- 아이디는 이메일 형식, 비밀번호는 8자 이상으로만 가입이 가능하도록 유효성 검사 진행
+- 회원가입 후 로그인 페이지로 이동(/signin)
 
-### `npm test`
+### 3. 로그인 페이지
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 아이디와 비밀번호를 입력하여 로그인이 가능
+- 아이디는 이메일 형식, 비밀번호는 8자 이상으로만 로그인이 가능하도록 유효성 검사 진행
+- 로그인 후 투두리스트 페이지로 이동(/todo)
 
-### `npm run build`
+### 4. 투두리스트 페이지
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 로그인이 되었을 경우(로컬스토리지에 엑세스 토큰이 포함되어있을 경우)에만 페이지 확인이 가능
+- 투두리스트를 조회, 추가, 수정, 삭제가 가능
