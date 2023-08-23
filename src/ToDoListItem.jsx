@@ -20,10 +20,10 @@ export default function ToDoListItem({ todoText, isCompleted, id, setTodos }) {
     setText(e.target.value);
   };
 
-  const api = `https://www.pre-onboarding-selection-task.shop/todos/${id}`;
-  const apiGet = "https://www.pre-onboarding-selection-task.shop/todos";
-  //   const api = `http://localhost:8000/${id}`;
-  //   const apiGet = "http://localhost:8000/todos";
+  // const api = `https://www.pre-onboarding-selection-task.shop/todos/${id}`;
+  // const apiGet = "https://www.pre-onboarding-selection-task.shop/todos";
+  const api = `http://localhost:8000/${id}`;
+  const apiGet = "http://localhost:8000/todos";
 
   const accessToken = localStorage.getItem("AccessToken");
 

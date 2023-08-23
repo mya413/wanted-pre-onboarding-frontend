@@ -37,8 +37,8 @@ export default function SignUp() {
   };
 
   const navigate = useNavigate();
-  const api = "https://www.pre-onboarding-selection-task.shop/auth/signup";
-  //   const api = "http://localhost:8000/auth/signup";
+  // const api = "https://www.pre-onboarding-selection-task.shop/auth/signup";
+  const api = "http://localhost:8000/auth/signup";
 
   const handleSignedUp = async (e) => {
     e.preventDefault();

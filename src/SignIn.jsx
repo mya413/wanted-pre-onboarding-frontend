@@ -37,8 +37,8 @@ export default function SignIn({ login }) {
   };
 
   const navigate = useNavigate();
-  const api = "https://www.pre-onboarding-selection-task.shop/auth/signin";
-  //   const api = "http://localhost:8000/auth/signin";
+  // const api = "https://www.pre-onboarding-selection-task.shop/auth/signin";
+  const api = "http://localhost:8000/auth/signin";
   const handleLoggedIn = async (e) => {
     e.preventDefault();
     await axios

@@ -8,8 +8,8 @@ export default function ToDoInsert({ setTodos }) {
     setTodo(e.target.value);
   };
 
-  const api = "https://www.pre-onboarding-selection-task.shop/todos";
-  //   const api = "http://localhost:8000/todos";
+  // const api = "https://www.pre-onboarding-selection-task.shop/todos";
+  const api = "http://localhost:8000/todos";
 
   const accessToken = localStorage.getItem("AccessToken");
 
